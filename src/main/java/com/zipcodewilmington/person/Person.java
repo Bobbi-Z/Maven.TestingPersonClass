@@ -17,6 +17,7 @@ public class Person {
     }
 
     public Person(String name) {
+        setName(name);
     }
 
     public Person(String name, int age) {
