@@ -9,7 +9,7 @@ public class Person {
 
     public Person() {
     name = "";
-    age = 0;
+    age = Integer.MAX_VALUE;
     }
 
     public Person(int age) {
