@@ -104,4 +104,13 @@ public class TestPerson {
         String actual = person.getBirthMonth();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testPhoneOS(){
+        Person person = new Person();
+        String expected = "iOS";
+        person.setPhoneOS(expected);
+        String actual = person.getPhoneOS();
+        Assert.assertEquals(expected, actual);
+    }
 }
