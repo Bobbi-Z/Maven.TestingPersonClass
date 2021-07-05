@@ -69,6 +69,20 @@ public class TestPerson {
     }
 
     @Test
+    public void testConstructorAddingBirthMonth(){
+        Integer expectedAge = 31;
+        String expectedName = "Bobbi";
+        String expectedBirthMonth = "October";
+        Person person = new Person(expectedName, expectedAge, expectedBirthMonth);
+        Integer actualAge = person.getAge();
+        String actualName = person.getName();
+        String actualBirthMonth = person.getBirthMonth();
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedBirthMonth, actualBirthMonth);
+    }
+
+    @Test
     public void testSetName() {
         // Given
         Person person = new Person();
