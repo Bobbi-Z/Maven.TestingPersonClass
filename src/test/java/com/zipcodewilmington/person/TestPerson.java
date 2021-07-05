@@ -95,4 +95,13 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testBirthMonth(){
+        Person person = new Person();
+        String expected = "October";
+        person.setBirthMonth(expected);
+        String actual = person.getBirthMonth();
+        Assert.assertEquals(expected, actual);
+    }
 }
