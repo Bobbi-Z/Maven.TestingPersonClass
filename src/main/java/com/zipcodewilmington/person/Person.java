@@ -7,6 +7,7 @@ public class Person {
     private String name;
     private int age;
     private String birthMonth;
+    private String phoneOS;
 
     public Person() {
     name = "";
@@ -38,6 +39,10 @@ public class Person {
         this.birthMonth = birthMonth;
     }
 
+    public void setPhoneOS(String phoneOS){
+        this.phoneOS = phoneOS;
+    }
+
     public String getName() {
         return name;
     }
@@ -48,5 +53,9 @@ public class Person {
 
     public String getBirthMonth() {
         return birthMonth;
+    }
+
+    public String getPhoneOS(){
+        return phoneOS;
     }
 }
