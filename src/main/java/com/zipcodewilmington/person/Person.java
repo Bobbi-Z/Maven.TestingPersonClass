@@ -8,9 +8,12 @@ public class Person {
     private int age;
 
     public Person() {
+    name = "";
+    age = 0;
     }
 
     public Person(int age) {
+        setAge(age);
     }
 
     public Person(String name) {
