@@ -38,6 +38,6 @@ public class Person {
     }
 
     public Integer getAge() {
-        return null;
+        return age;
     }
 }
