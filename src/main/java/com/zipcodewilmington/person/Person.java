@@ -6,6 +6,7 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private String birthMonth;
 
     public Person() {
     name = "";
@@ -33,11 +34,19 @@ public class Person {
         this.age = age;
     }
 
+    public void setBirthMonth(String birthMonth){
+        this.birthMonth = birthMonth;
+    }
+
     public String getName() {
         return name;
     }
 
     public Integer getAge() {
         return age;
+    }
+
+    public String getBirthMonth() {
+        return birthMonth;
     }
 }
