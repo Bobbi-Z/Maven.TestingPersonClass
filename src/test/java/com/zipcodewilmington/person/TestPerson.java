@@ -142,4 +142,13 @@ public class TestPerson {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public  void testHoursWorkedToday(){
+        Person person = new Person();
+        Double expected = 8.5;
+        person.setHoursWorkedToday(expected);
+        Double actual = person.getHoursWorkedToday();
+        Assert.assertEquals(expected, actual, 0);
+    }
+
 }

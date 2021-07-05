@@ -10,6 +10,7 @@ public class Person {
     private String phoneOS;
     private Boolean employed;
     private String preferCokeOrPepsi;
+    private Double hoursWorkedToday;
 
     public Person() {
     name = "";
@@ -75,5 +76,13 @@ public class Person {
 
     public String getPreferCokeOrPepsi(){
         return preferCokeOrPepsi;
+    }
+
+    public void setHoursWorkedToday(Double hoursWorkedToday) {
+        this.hoursWorkedToday = hoursWorkedToday;
+    }
+
+    public Double getHoursWorkedToday() {
+        return hoursWorkedToday;
     }
 }
