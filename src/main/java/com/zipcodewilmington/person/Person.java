@@ -9,6 +9,7 @@ public class Person {
     private String birthMonth;
     private String phoneOS;
     private Boolean employed;
+    private String preferCokeOrPepsi;
 
     public Person() {
     name = "";
@@ -48,6 +49,10 @@ public class Person {
         this.employed = employed;
     }
 
+    public void setPreferCokeOrPepsi (String preferCokeOrPepsi){
+        this.preferCokeOrPepsi = preferCokeOrPepsi;
+    }
+
     public String getName() {
         return name;
     }
@@ -66,5 +71,9 @@ public class Person {
 
     public Boolean getEmployed(){
         return employed;
+    }
+
+    public String getPreferCokeOrPepsi(){
+        return preferCokeOrPepsi;
     }
 }

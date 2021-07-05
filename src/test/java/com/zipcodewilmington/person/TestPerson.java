@@ -132,4 +132,14 @@ public class TestPerson {
         Boolean actual = person.getEmployed();
         Assert.assertFalse(String.valueOf(expected), actual);
     }
+
+    @Test
+    public void testPreferCokeOrPepsi(){
+        Person person = new Person();
+        String expected = "Coke";
+        person.setPreferCokeOrPepsi(expected);
+        String actual = person.getPreferCokeOrPepsi();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
