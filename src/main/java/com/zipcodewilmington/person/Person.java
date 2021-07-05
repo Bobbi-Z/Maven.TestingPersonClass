@@ -21,9 +21,12 @@ public class Person {
     }
 
     public Person(String name, int age) {
+        setName(name);
+        setAge(age);
     }
 
     public void setName(String name) {
+
     }
 
     public void setAge(int age) {
