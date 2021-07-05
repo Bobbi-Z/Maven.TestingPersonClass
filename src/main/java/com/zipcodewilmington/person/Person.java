@@ -8,6 +8,7 @@ public class Person {
     private int age;
     private String birthMonth;
     private String phoneOS;
+    private Boolean employed;
 
     public Person() {
     name = "";
@@ -27,12 +28,6 @@ public class Person {
         setAge(age);
     }
 
-    public Person(String name, int age, String birthMonth){
-        setName(name);
-        setAge(age);
-        setBirthMonth((birthMonth));
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -49,6 +44,10 @@ public class Person {
         this.phoneOS = phoneOS;
     }
 
+    public void setEmployed(Boolean employed){
+        this.employed = employed;
+    }
+
     public String getName() {
         return name;
     }
@@ -63,5 +62,9 @@ public class Person {
 
     public String getPhoneOS(){
         return phoneOS;
+    }
+
+    public Boolean getEmployed(){
+        return employed;
     }
 }

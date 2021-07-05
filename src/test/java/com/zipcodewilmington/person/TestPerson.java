@@ -1,5 +1,6 @@
 package com.zipcodewilmington.person;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -69,20 +70,6 @@ public class TestPerson {
     }
 
     @Test
-    public void testConstructorAddingBirthMonth(){
-        Integer expectedAge = 31;
-        String expectedName = "Bobbi";
-        String expectedBirthMonth = "October";
-        Person person = new Person(expectedName, expectedAge, expectedBirthMonth);
-        Integer actualAge = person.getAge();
-        String actualName = person.getName();
-        String actualBirthMonth = person.getBirthMonth();
-        Assert.assertEquals(expectedAge, actualAge);
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedBirthMonth, actualBirthMonth);
-    }
-
-    @Test
     public void testSetName() {
         // Given
         Person person = new Person();
@@ -126,5 +113,23 @@ public class TestPerson {
         person.setPhoneOS(expected);
         String actual = person.getPhoneOS();
         Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testEmployed(){
+        Person person = new Person();
+        Boolean expected = true;
+        person.setEmployed(expected);
+        Boolean actual = person.getEmployed();
+        Assert.assertTrue(String.valueOf(expected), actual);
+    }
+
+    @Test
+    public void testEmployed2(){
+        Person person = new Person();
+        Boolean expected = false;
+        person.setEmployed(expected);
+        Boolean actual = person.getEmployed();
+        Assert.assertFalse(String.valueOf(expected), actual);
     }
 }
